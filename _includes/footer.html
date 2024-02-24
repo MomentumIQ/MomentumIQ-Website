@@ -26,7 +26,7 @@
             <h5>Products</h5>
             <ul class="nav flex-column">
                 {% for product in site.products %}
-                <li class="nav-item mb-2"><a href="{{ product.url }}" class="nav-link p-0 text-muted"><small>{{ product.name }}</small></a></li>
+                <li class="nav-item mb-2"><a href="{{ product.url }}" class="nav-link p-0 text-muted"><small>{{ product.title }}</small></a></li>
                 {% endfor %}
             </ul>
         </div>
