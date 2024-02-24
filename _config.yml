@@ -1,0 +1,28 @@
+collections:
+  products:
+    output: true
+  teammembers:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "teammembers"
+    values:
+      layout: "teammember"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+team_description: "MomentumIQ is a small team of technologists from the Pacific Northwest (aka Cascadia). If you you're interested in helping us get our products into the hands of users faster, <a href=\"mailto:contact@MomentumIQ.ai\">drop us a line</a>."
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

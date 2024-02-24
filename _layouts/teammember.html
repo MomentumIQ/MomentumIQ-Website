@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="jumbotron inset">
+    <div class="container">
+        <h1 class="display-1">{{ page.title }}</h1>
+        <h5 class="text-muted">{{ content }}</h5>
+    </div>
+</div>
+<div class="inset">
+    {% for teammember in site.teammembers %}
+        <div class="card position-relative shadow text-center mx-2 my-2">
+            <div class="row g-0 mx-2 my-2">
+                <div class="col">
+                    <div class="col">
+                        <img class="border rounded-circle shadow float-left img-fluid" src="{{ teammember.image }}" alt="{{ teammember.name }}">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-body text-left col">
+                        <h1 class=" display-2 card-title">{{ teammember.name }}</h1>
+                        <h1 class="card-text text-muted">{{ teammember.position }}</h1>
+                        <div class="my-4">
+                            <p class="card-text text-muted">{{ teammember.content }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <img height="100" class="object-fit-cover" src="{{ teammember.previous_company_image_1 }}">
+                <img height="100" class="object-fit-cover" src="{{ teammember.previous_company_image_2 }}">
+                <img height="100" class="object-fit-cover" src="{{ teammember.previous_company_image_3 }}">
+            </div>
+        </div>
+    {% endfor %}    
+</div>

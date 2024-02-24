@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top inset">
+  <a class="navbar-brand mx-3" href="/">
+    <div class="row">
+      <img src="/assets/images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="MomentumIQ">
+      <div class="col">
+        MomentumIQ
+        <h6><small class="text-muted">Bringing Financial AI to Life</small></h6>
+      </div>
+    </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      {% for item in site.data.navigation %}
+      <a class="nav-item nav-link active" href="{{ item.link }}">
+        {{ item.name }}
+        {% if page.url == item.link %}
+        <span class="sr-only">(current)</span>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>
+<nav>
+</nav>

@@ -1,0 +1,60 @@
+
+a {
+    color: #1D49A7 !important; 
+    -webkit-transition: color .15s linear;
+    -moz-transition: color .15s linear;
+    -ms-transition: color .15s linear;
+    -o-transition: color .15s linear;
+    transition: color .15s linear;
+}
+
+a:hover { 
+    color: #1D49A7 !important;
+    text-decoration: none !important;
+}
+
+body {
+    background-color: white !important; 
+    color: #181818 !important;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.card {
+    border-radius: 10px !important;
+    // background-color: #212121 !important;
+}
+
+.card-img-overlay {
+    position: absolute;
+    margin-left: 60% !important;
+}
+
+.inset {
+    width:80%;
+    margin:0 auto; 
+}
+
+.jumbotron {
+    // color: black;
+    background-color: transparent !important;
+    // position: relative;
+    // background: url('../img/pexels-photo.jpeg') no-repeat center center;
+    // background-size: cover;
+    // min-height:100vh;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+}
+
+.navbar-brand, .nav-link  {
+    color: #1D49A7 !important;
+}
+
+.nav-link:hover {
+    color: #1D49A7 !important;
+}
+
+.sticky-top .container{
+    width:100%;
+}
