@@ -28,6 +28,7 @@ layout: default
               </div>
             </div>
             <p class="card-text flex-grow-1">{{ product.tagline }}</p>
+            {% if product.status %}<span class="badge badge-secondary mb-2">{{ product.status }}</span>{% endif %}
             <a href="{{ product.url }}" class="btn btn-outline-primary mt-3">Learn More <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
@@ -41,7 +42,7 @@ layout: default
   <div class="inset">
     <div class="container">
       <h2 class="section-title">Our Approach</h2>
-      <p class="section-subtitle">Built on Federated Learning: privacy by design, not by policy.</p>
+      <p class="section-subtitle">Privacy by design: your data trains the model, but never leaves your device.</p>
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="approach-item">

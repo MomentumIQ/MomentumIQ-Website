@@ -13,6 +13,9 @@ layout: default
     <a href="{{ page.external_url }}" class="btn btn-primary" target="_blank" rel="noopener">
       Visit {{ page.title }} <i class="bi bi-arrow-right"></i>
     </a>
+    {% if page.status %}
+    <span class="badge badge-secondary mt-3 d-inline-block">{{ page.status }}</span>
+    {% endif %}
   </div>
 </div>
 

@@ -20,7 +20,7 @@ defaults:
     values:
       layout: "default"
 
-tagline: "Bringing Financial AI to Life"
+tagline: "AI That Works For You. Not On Your Data."
 sub_tagline: "We build AI-powered financial tools for consumers and investors: privacy-first, on-device, with no cloud data storage."
 
 team_description: "MomentumIQ is a small team of technologists from the Pacific Northwest (aka Cascadia). If you're interested in helping us get our products into the hands of users faster, <a href=\"mailto:contact@MomentumIQ.ai\">drop us a line</a>."
