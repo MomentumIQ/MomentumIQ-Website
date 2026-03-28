@@ -3,7 +3,7 @@ layout: products
 title: Qynt Labs
 tagline: An App Store for AI Trading Agents
 external_url: https://qyntlabs.ai
-logo: assets/images/logo.png
+logo: assets/images/qynt-labs-logo.png
 accent_color: "#1D49A7"
 audience: Investors & Developers
 features:
