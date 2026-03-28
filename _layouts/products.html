@@ -1,16 +1,43 @@
 ---
-layout: splash
+layout: default
 ---
-
-{{ content }}
-<div class="card">
-    <a class="navbar-brand mx-5" href="http://www.scrillionaire.ai">
-        <div class="row">
-            <img src="/assets/images/Scrillionaire-AI.png" width="90" height="90" class="d-inline-block align-top" alt="Scrillionaire">
-            <div class="col">
-                <h1 style="color:#74F9B8">Scrillionaire</h1>
-                <p class="text-muted">AI Financial Services</p>
-            </div>
-        </div>
+<div class="product-hero inset">
+  <div class="container py-5">
+    <div class="d-flex align-items-center mb-4">
+      <img src="/{{ page.logo }}" width="80" height="80" class="d-inline-block mr-4" alt="{{ page.title }}">
+      <div>
+        <h1 class="mb-1" style="color: {{ page.accent_color }}">{{ page.title }}</h1>
+        <p class="lead text-muted mb-0">{{ page.tagline }}</p>
+      </div>
+    </div>
+    <a href="{{ page.external_url }}" class="btn btn-primary" target="_blank" rel="noopener">
+      Visit {{ page.title }} <i class="bi bi-arrow-right"></i>
     </a>
+  </div>
+</div>
+
+<div class="inset py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <p class="lead">{{ page.description }}</p>
+        {{ content }}
+      </div>
+      <div class="col-md-4 offset-md-1">
+        <div class="card product-features-card">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Key Features</h5>
+            <ul class="feature-list">
+              {% for feature in page.features %}
+              <li>{{ feature }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% if page.audience %}
+        <p class="text-muted mt-3"><small><strong>Built for:</strong> {{ page.audience }}</small></p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>

@@ -10,10 +10,12 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.16.3)
+    ffi (1.16.3-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     google-protobuf (3.25.3)
     google-protobuf (3.25.3-aarch64-linux)
     google-protobuf (3.25.3-arm64-darwin)
+    google-protobuf (3.25.3-x64-mingw-ucrt)
     google-protobuf (3.25.3-x86-linux)
     google-protobuf (3.25.3-x86_64-darwin)
     google-protobuf (3.25.3-x86_64-linux)
@@ -78,6 +80,8 @@ GEM
       google-protobuf (~> 3.25)
     sass-embedded (1.71.1-arm64-darwin)
       google-protobuf (~> 3.25)
+    sass-embedded (1.71.1-x64-mingw-ucrt)
+      google-protobuf (~> 3.25)
     sass-embedded (1.71.1-x86-linux-android)
       google-protobuf (~> 3.25)
     sass-embedded (1.71.1-x86-linux-gnu)
@@ -106,6 +110,7 @@ PLATFORMS
   arm-linux-gnueabihf
   arm-linux-musleabihf
   arm64-darwin
+  x64-mingw-ucrt
   x86-linux
   x86-linux-android
   x86-linux-gnu
