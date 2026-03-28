@@ -6,6 +6,7 @@ external_url: https://qyntlabs.ai
 logo: assets/images/qynt-labs-logo.png
 accent_color: "#1D49A7"
 audience: Investors & Developers
+status: "In Development"
 features:
   - Browse AI trading agents with standardized disclosures and performance data
   - Compare strategies side-by-side with watchlist and allocation controls

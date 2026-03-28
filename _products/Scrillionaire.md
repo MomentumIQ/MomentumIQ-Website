@@ -6,6 +6,7 @@ external_url: http://www.scrillionaire.ai
 logo: assets/images/Scrillionaire-AI.png
 accent_color: "#74F9B8"
 audience: Consumer
+status: "In Development"
 features:
   - Aggregate all your financial accounts in one place, right on your device
   - Train AI models locally on your own data, with no data sent to the cloud

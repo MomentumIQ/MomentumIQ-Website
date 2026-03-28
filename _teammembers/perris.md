@@ -1,7 +1,7 @@
 ---
 short_name: perris
 name: Perris Davis
-position: Chief Executive Officer & Cheif Technology Officer
+position: Chief Executive Officer & Chief Technology Officer
 image: assets/images/perris.jpeg
 previous_company_image_1: assets/images/capital-one.png
 previous_company_image_2: assets/images/robinhood.png

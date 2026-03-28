@@ -6,7 +6,10 @@ layout: default
     <div class="d-flex align-items-center mb-4">
       <img src="/{{ page.logo }}" width="80" height="80" class="d-inline-block mr-4" alt="{{ page.title }}">
       <div>
-        <h1 class="mb-1" style="color: {{ page.accent_color }}">{{ page.title }}</h1>
+        <div class="d-flex align-items-center flex-wrap">
+          <h1 class="mb-1 mr-3" style="color: {{ page.accent_color }}">{{ page.title }}</h1>
+          {% if page.status %}<span class="badge badge-status mb-1">{{ page.status }}</span>{% endif %}
+        </div>
         <p class="lead text-muted mb-0">{{ page.tagline }}</p>
       </div>
     </div>
