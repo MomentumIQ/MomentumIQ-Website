@@ -1,48 +1,42 @@
-<div style="border-color: white;" class="border-top my-4"></div>
-<footer class="inset">
-    <div class="row row-cols-5">
-        <!-- <div class="col"> -->
-            <a class="navbar-brand mx-5" href="/">
-                <div class="row">
-                  <img src="/assets/images/logo.png" width="90" height="90" class="d-inline-block align-top" alt="MomentumIQ">
-                  <div class="col">
-                    <h1>MomentumIQ</h1>
-                    <p class="text-muted">Bringing Financial AI to Life</p>
-                  </div>
-                </div>
-              </a>
-        <!-- </div> -->
-        <div class="col"></div>
-        <div class="col-2">
-            <h5>Resources</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted"><small>Home</small></a></li>
-                {% for item in site.data.navigation %}
-                <li class="nav-item mb-2"><a href="{{ item.link }}" class="nav-link p-0 text-muted"><small>{{ item.name }}</small></a></li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="col-2">
-            <h5>Products</h5>
-            <ul class="nav flex-column">
-                {% for product in site.products %}
-                <li class="nav-item mb-2"><a href="{{ product.url }}" class="nav-link p-0 text-muted"><small>{{ product.title }}</small></a></li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="col-2">
-            <h5>Company</h5>
-            <ul class="nav flex-column">
-                {% for item in site.data.footer %}
-                <li class="nav-item mb-2"><a href="{{ item.link }}" class="nav-link p-0 text-muted"><small>{{ item.name }}</small></a></li>
-                {% endfor %}
-            </ul>
-        </div>
+<footer class="mt-5" style="background-color: #fafbfc; border-top: 1px solid #e4e8ed;">
+  <div class="inset py-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <a class="d-flex align-items-center mb-2" href="/" style="text-decoration:none;">
+          <img src="/assets/images/logo.png" width="40" height="40" class="mr-2" alt="MomentumIQ">
+          <h5 class="mb-0 font-weight-bold">MomentumIQ</h5>
+        </a>
+        <p class="text-muted" style="font-size:0.9rem;">Bringing Financial AI to Life</p>
+      </div>
+      <div class="col-md-2 offset-md-2 mb-4">
+        <h6 class="font-weight-bold mb-3">Resources</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-muted" style="font-size:0.9rem;">Home</a></li>
+          {% for item in site.data.navigation %}
+          <li class="nav-item mb-2"><a href="{{ item.link }}" class="nav-link p-0 text-muted" style="font-size:0.9rem;">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h6 class="font-weight-bold mb-3">Products</h6>
+        <ul class="nav flex-column">
+          {% for product in site.products %}
+          <li class="nav-item mb-2"><a href="{{ product.url }}" class="nav-link p-0 text-muted" style="font-size:0.9rem;">{{ product.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h6 class="font-weight-bold mb-3">Company</h6>
+        <ul class="nav flex-column">
+          {% for item in site.data.footer %}
+          <li class="nav-item mb-2"><a href="{{ item.link }}" class="nav-link p-0 text-muted" style="font-size:0.9rem;">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-
-    
-    <div class="d-flex justify-content-between py-4 my-4 border-top">
-        <p><small class="text-muted">© 2023 MomentumIQ, Inc. All rights reserved.</small></p>
-        <p><small class="text-muted">Made with 🌲🌲🌲 in Cascadia</small></p>
+    <div class="d-flex justify-content-between pt-4 mt-2" style="border-top: 1px solid #e4e8ed;">
+      <small class="text-muted">© 2026 MomentumIQ, Inc. All rights reserved.</small>
+      <small class="text-muted">Made with 🌲🌲🌲 in Cascadia</small>
     </div>
+  </div>
 </footer>

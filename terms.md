@@ -143,7 +143,7 @@ We regard our customers as being responsible for their own actions as well as fo
 By accepting Products from us, our customers agree to ensure adherence to this policy on behalf of anyone using the Products as their end users. Complaints regarding the actions of customers or their end-users will be forwarded to the nominated contact for the account in question.
 
 
-If a customer — or their end-user or anyone using our Products as a result of the customer — violates our acceptable use policy, we reserve the right to terminate any Products associated with the offending account or the account itself or take any remedial or preventative action we deem appropriate, without notice. To the extent permitted by law, no credit will be available for interruptions of service resulting from any violation of our acceptable use policy.
+If a customer, or their end-user or anyone using our Products as a result of the customer, violates our acceptable use policy, we reserve the right to terminate any Products associated with the offending account or the account itself or take any remedial or preventative action we deem appropriate, without notice. To the extent permitted by law, no credit will be available for interruptions of service resulting from any violation of our acceptable use policy.
 
 Prohibited activity
 Copyright infringement and access to unauthorized material

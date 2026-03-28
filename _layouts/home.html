@@ -1,11 +1,70 @@
 ---
 layout: default
 ---
-<div class="jumbotron inset">
-    <div class="container">
-        <h1>{{ site.tagline }}</h1>
-        <p class="lead">{{ site.sub_tagline}}</p>
-        <p class="lead">{{ content }}</p>
-        <hr class="my-4">
+<div class="home-hero">
+  <div class="inset">
+    <div class="container py-5">
+      <h1 class="display-4 font-weight-bold">{{ site.tagline }}</h1>
+      <p class="lead text-muted mt-3 mb-4">{{ site.sub_tagline }}</p>
+      <a href="#products" class="btn btn-primary btn-lg">Explore Our Products <i class="bi bi-arrow-down"></i></a>
     </div>
+  </div>
+</div>
+
+<div id="products" class="inset py-5">
+  <div class="container">
+    <h2 class="section-title">Our Products</h2>
+    <p class="section-subtitle">Two products, one mission: making AI work for your finances.</p>
+    <div class="row">
+      {% for product in site.products %}
+      <div class="col-md-6 mb-4">
+        <div class="card product-card h-100" style="border-left: 3px solid {{ product.accent_color }} !important;">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <img src="/{{ product.logo }}" width="56" height="56" class="mr-3" alt="{{ product.title }}">
+              <div>
+                <h4 class="mb-0" style="color: {{ product.accent_color }}">{{ product.title }}</h4>
+                <small class="text-muted">{{ product.audience }}</small>
+              </div>
+            </div>
+            <p class="card-text flex-grow-1">{{ product.tagline }}</p>
+            <a href="{{ product.url }}" class="btn btn-outline-primary mt-3">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="home-approach py-5">
+  <div class="inset">
+    <div class="container">
+      <h2 class="section-title">Our Approach</h2>
+      <p class="section-subtitle">Built on Federated Learning: privacy by design, not by policy.</p>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="approach-item">
+            <div class="approach-icon-wrap"><i class="bi bi-phone approach-icon"></i></div>
+            <h5>On-Device AI</h5>
+            <p class="text-muted">AI models train locally on your device. Your data never leaves.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="approach-item">
+            <div class="approach-icon-wrap"><i class="bi bi-shield-check approach-icon"></i></div>
+            <h5>Privacy-First</h5>
+            <p class="text-muted">No user data stored in the cloud. No large cloud compute required.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="approach-item">
+            <div class="approach-icon-wrap"><i class="bi bi-graph-up approach-icon"></i></div>
+            <h5>Federated Learning</h5>
+            <p class="text-muted">We use cutting-edge federated learning to deliver personalization at scale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
