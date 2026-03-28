@@ -28,7 +28,7 @@ layout: default
               </div>
             </div>
             <p class="card-text flex-grow-1">{{ product.tagline }}</p>
-            {% if product.status %}<span class="badge badge-secondary mb-2">{{ product.status }}</span>{% endif %}
+            {% if product.status %}<span class="badge badge-status mb-2">{{ product.status }}</span>{% endif %}
             <a href="{{ product.url }}" class="btn btn-outline-primary mt-3">Learn More <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>

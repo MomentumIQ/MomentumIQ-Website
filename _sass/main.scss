@@ -308,6 +308,17 @@ a:not(.btn) {
     display: inline-block;
 }
 
+.badge-status {
+    background-color: #e9ecef;
+    color: $muted-text;
+    padding: 0.35em 0.85em;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    display: inline-block;
+}
+
 // ─── Cards (global) ───────────────────────────────────────────────────────────
 .card {
     border-radius: 10px !important;
