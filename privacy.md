@@ -38,7 +38,7 @@ Please be aware that while this information may not be personally identifying by
 
 Personal Information
 
-We may ask for personal information — for example, when you submit content to us or when you contact us — which may include one or more of the following:
+We may ask for personal information (for example, when you submit content to us or when you contact us) which may include one or more of the following:
 
 
 Name

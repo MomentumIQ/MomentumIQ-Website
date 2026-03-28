@@ -15,19 +15,42 @@ body {
     line-height: 1.65;
 }
 
-a {
-    color: $primary;
+a:not(.btn) {
+    color: $primary !important;
     transition: color 0.15s linear, opacity 0.15s linear;
     &:hover {
-        color: darken($primary, 10%);
+        color: darken($primary, 10%) !important;
         text-decoration: none;
         opacity: 0.85;
     }
 }
 
+// Force Bootstrap buttons to use our blue, not Bootstrap's #007bff
+.btn-primary {
+    background-color: $primary !important;
+    border-color: $primary !important;
+    color: #ffffff !important;
+    &:hover, &:focus, &:active {
+        background-color: darken($primary, 8%) !important;
+        border-color: darken($primary, 8%) !important;
+        color: #ffffff !important;
+    }
+}
+
+.btn-outline-primary {
+    border-color: $primary !important;
+    color: $primary !important;
+    background-color: transparent !important;
+    &:hover, &:focus, &:active {
+        background-color: $primary !important;
+        border-color: $primary !important;
+        color: #ffffff !important;
+    }
+}
+
 // ─── Layout ───────────────────────────────────────────────────────────────────
 .inset {
-    width: 82%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -36,19 +59,31 @@ a {
     background-color: #ffffff !important;
     border-bottom: 1px solid $border-color;
     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-inner {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar-brand, .nav-link {
     color: $primary !important;
     font-weight: 500;
+    opacity: 1 !important;
 }
 
-.nav-link:hover {
+.navbar-nav {
+    margin-right: 5rem;
+}
+
+.nav-link:hover, .navbar-brand:hover {
     color: darken($primary, 10%) !important;
-}
-
-.sticky-top .container {
-    width: 100%;
+    opacity: 0.85 !important;
 }
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
