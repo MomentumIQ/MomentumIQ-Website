@@ -79,3 +79,8 @@ When making architectural changes — new shared files, new patterns, changes to
 3. Merge commit created (not squash, to preserve history)
 4. Post-merge: `git checkout main && git pull`
 5. **GitHub Pages auto-deploys on merge to `main`** — no manual deploy step needed. Verify the live site at the CNAME domain after a minute or two.
+
+## gstack
+- Use the `/browse` skill from gstack for all web browsing.
+- Never use `mcp__claude-in-chrome__*` tools.
+- Available skills: /office-hours, /plan-ceo-review, /plan-eng-review, /plan-design-review, /review, /qa, /ship, /retro.
