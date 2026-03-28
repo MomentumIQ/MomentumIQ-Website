@@ -17,27 +17,58 @@ bundle exec jekyll build
 
 ## Architecture
 
-This is a **Jekyll static site** deployed on GitHub Pages. Pushing to `main` triggers an automatic rebuild and deploy — there is no staging environment.
+This is a **Jekyll static site** deployed on GitHub Pages. Pushing to `main` triggers an automatic rebuild and deploy. There is no staging environment. `_site/` is gitignored and built automatically by GitHub Pages.
 
 ### How pages are built
 
 Every page is a Markdown file at the root with frontmatter specifying a layout. Jekyll combines that content with the matching layout in `_layouts/`, wrapping it in `_layouts/default.html` (the master template). All pages inherit the nav and footer via `{% include navigation.html %}` and `{% include footer.html %}` in `default.html`.
 
+### Layouts
+- `home.html` - Home page with hero, product cards loop, and approach section
+- `about.html` - About page with two-column product cards and technology section
+- `products.html` - Generic product detail page, fully driven by frontmatter (no hardcoded product content)
+- `splash.html` - Simple centered content page (contact, privacy, terms)
+- `blog.html` / `post.html` - Blog index and individual post
+- `teammember.html` - Team member profile
+
 ### Navigation and footer links
 
-Nav links and footer links are **not hardcoded in HTML** — they are driven by YAML data files:
-- `_data/navigation.yml` → top navbar (rendered in `_includes/navigation.html`)
-- `_data/footer.yml` → "Company" column in footer (rendered in `_includes/footer.html`)
+Nav links and footer links are not hardcoded in HTML. They are driven by YAML data files:
+- `_data/navigation.yml` - top navbar (rendered in `_includes/navigation.html`)
+- `_data/footer.yml` - "Company" column in footer (rendered in `_includes/footer.html`)
 
 The footer's "Products" column is auto-populated from the `_products/` collection via `site.products`.
 
 ### Collections
 
 Two Jekyll collections are configured in `_config.yml`:
-- `_products/` — each file becomes a product page using `_layouts/products.html`
-- `_teammembers/` — each file becomes a team profile using `_layouts/teammember.html`
+- `_products/` - each file becomes a product page using `_layouts/products.html`
+- `_teammembers/` - each file becomes a team profile using `_layouts/teammember.html`
 
 Both have `output: true`, meaning they generate their own URLs.
+
+### Adding a new product
+
+Create a file in `_products/` with this frontmatter schema:
+
+```yaml
+---
+layout: products
+title: Product Name
+tagline: One-line description
+external_url: https://...
+logo: assets/images/product-logo.png
+accent_color: "#HEX"
+audience: Target audience label
+status: "Optional — e.g. 'In Development'. Displays as a pill badge next to the title."
+features:
+  - Feature one
+  - Feature two
+description: Full paragraph description shown on the product page.
+---
+```
+
+The product will automatically appear in the footer "Products" column, the home page product cards, and the about page product cards without any layout changes.
 
 ### CDN dependencies with SRI hashes
 
@@ -45,7 +76,7 @@ Both have `output: true`, meaning they generate their own URLs.
 
 ### Styling
 
-Custom styles live in `_sass/main.scss`. Bootstrap is loaded from CDN (not bundled), so only overrides and custom classes go in the SCSS file.
+Custom styles live in `_sass/main.scss`. Bootstrap is loaded from CDN (not bundled), so only overrides and custom classes go in the SCSS file. Key classes: `.inset` (page width container, currently 65%), `.navbar-inner` (nav width), `.home-hero`, `.product-card`, `.approach-icon-wrap`, `.feature-list`.
 
 ## Keeping This File Updated
 When making architectural changes — new shared files, new patterns, changes to the component model, or new pages — update the relevant section of this file before closing the task.
@@ -83,4 +114,4 @@ When making architectural changes — new shared files, new patterns, changes to
 ## gstack
 - Use the `/browse` skill from gstack for all web browsing.
 - Never use `mcp__claude-in-chrome__*` tools.
-- Available skills: /office-hours, /plan-ceo-review, /plan-eng-review, /plan-design-review, /review, /qa, /ship, /retro.
+- Available skills: /office-hours, /plan-ceo-review, /plan-eng-review, /plan-design-review, /review, /qa, /ship, /retro, /document-release.
