@@ -23,7 +23,7 @@ defaults:
       layout: "default"
 
 tagline: "AI For Your Wallet. Not Your Data."
-sub_tagline: "The financial system extracts your data to serve itself. We build AI that uses your data to serve you — for consumers who want financial clarity, and investors who want systematic edge — on your device, on your terms."
+sub_tagline: "The financial system extracts your data to serve itself. We build AI that uses your data to serve you: for consumers who want financial clarity and investors who want systematic edge, on your device, on your terms."
 
 team_description: "MomentumIQ is a small team of technologists from the Pacific Northwest (aka Cascadia). If you're interested in helping us get our products into the hands of users faster, <a href=\"mailto:contact@MomentumIQ.ai\">drop us a line</a>."
 
