@@ -25,6 +25,16 @@ a:not(.btn) {
     }
 }
 
+// Muted anchor links (e.g. investor CTA in footer) — must come after
+// a:not(.btn) to win the specificity+order tie with !important
+a.text-muted {
+    color: $muted-text !important;
+    &:hover {
+        color: darken($muted-text, 10%) !important;
+        opacity: 0.85;
+    }
+}
+
 // Force Bootstrap buttons to use our blue, not Bootstrap's #007bff
 .btn-primary {
     background-color: $primary !important;
