@@ -79,6 +79,19 @@ The product will automatically appear in the footer "Products" column, the home 
 
 Custom styles live in `_sass/main.scss`. Bootstrap is loaded from CDN (not bundled), so only overrides and custom classes go in the SCSS file. Key classes: `.inset` (page width container, currently 65%), `.navbar-inner` (nav width), `.home-hero`, `.product-card`, `.approach-icon-wrap`, `.feature-list`.
 
+## Copy Standards
+
+**No em dashes in public-facing text.** Any time you write or edit copy that will appear on the site (layouts, product files, `_config.yml` fields like `tagline`, `sub_tagline`, `description`, `team_description`), use standard punctuation instead:
+- Appositives: use a comma (`Federated Learning, a technique that...`)
+- Introducing a list or elaboration: use a colon (`to serve you: for consumers...`)
+- Parenthetical aside: use commas or rewrite as a separate sentence
+
+Before committing any copy change, grep for em dashes in public-facing files:
+```bash
+grep -rn "—" _config.yml _layouts/ _products/ _teammembers/ _includes/ *.md
+```
+Fix any hits before shipping. Developer docs (README.md, CLAUDE.md) are exempt.
+
 ## Keeping This File Updated
 When making architectural changes — new shared files, new patterns, changes to the component model, or new pages — update the relevant section of this file before closing the task.
 
