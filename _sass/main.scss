@@ -228,6 +228,13 @@ a.text-muted {
         padding: 0.5rem 1.25rem;
         &:hover { background-color: darken($primary, 8%); }
     }
+
+    .product-hero-screenshot {
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(29, 73, 167, 0.18);
+        transform: rotate(1.5deg);
+    }
 }
 
 .product-features-card {

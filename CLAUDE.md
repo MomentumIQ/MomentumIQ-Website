@@ -61,6 +61,7 @@ logo: assets/images/product-logo.png
 accent_color: "#HEX"
 audience: Target audience label
 status: "Optional — e.g. 'In Development'. Displays as a pill badge next to the title."
+hero_image: "Optional — path to a screenshot image shown right-aligned in the hero bar (e.g. assets/images/product-screenshot.png). Hidden on mobile. Use a 1280×800 above-the-fold screenshot."
 features:
   - Feature one
   - Feature two

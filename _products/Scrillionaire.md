@@ -4,6 +4,7 @@ title: Scrillionaire
 tagline: AI Financial Wellness for Everyday Users
 external_url: http://www.scrillionaire.ai
 logo: assets/images/Scrillionaire-AI.png
+hero_image: assets/images/scrillionaire-screenshot.png
 accent_color: "#74F9B8"
 audience: Consumer
 status: "In Development"
